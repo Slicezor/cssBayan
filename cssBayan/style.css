@@ -3,17 +3,22 @@
 body{
 	font-family: 'Roboto';
 	font-weight: 700;
-	font-size: 16px;
+	font-size: 24px;
 }
 
 .container{
 	color: black;
 	padding: 0 100px 0 100px;
 	max-width: 1024px;
+	margin: 0 auto;
 }
 
 .bayan__memes {
 	margin-bottom: 50px;
+}
+
+.bayan__memes:hover .label-meme__icon{
+	display: block;
 }
 
 .memes-bayan__bayan-meme {
@@ -29,6 +34,14 @@ body{
 	position: absolute;
 	visibility: hidden;
 }
+.memes-bayan__meme-label::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
 .memes-bayan__meme-input:checked ~ .memes-bayan__meme-image{
 	display: block;
 }
@@ -39,7 +52,13 @@ body{
 	cursor: pointer;
 	margin-bottom: 10px;
 }
+
+.memes-bayan__meme-input:checked ~ .memes-bayan__meme-label{
+	color: blue;
+}
+
 .label-meme__icon {
+	display: none;
 	width: 10px;
 	transition: 0.3s;
 }
@@ -55,4 +74,28 @@ body{
 	margin: 0 auto;
 }
 
+@media (max-width: 1920px){
+	  
+}
 
+@media (max-width: 820px){
+	body{
+		font-weight: 700;
+		font-size: 20px;
+	}
+
+	.container{
+		padding: 0 50px 0 50px;
+	}
+}
+
+@media (max-width: 320px){
+	body{
+		font-weight: 700;
+		font-size: 18px;
+	}
+
+	.container{
+		padding: 0 20px 0 20px;
+	}
+}
