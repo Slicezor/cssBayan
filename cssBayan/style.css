@@ -1,1 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap');
+
+body{
+	font-family: 'Roboto';
+	font-weight: 700;
+	font-size: 16px;
+}
+
+.container{
+	color: black;
+	padding: 0 100px 0 100px;
+	max-width: 1024px;
+}
+
+.bayan__memes {
+	margin-bottom: 50px;
+}
+
+.memes-bayan__bayan-meme {
+	position: relative;
+	border-top: 1px solid gray;
+	padding-top: 10px;
+}
+.memes-bayan__bayan-meme:not(:last-child){
+	margin-bottom: 10px;
+}
+
+.memes-bayan__meme-input {
+	position: absolute;
+	visibility: hidden;
+}
+.memes-bayan__meme-input:checked ~ .memes-bayan__meme-image{
+	display: block;
+}
+
+.memes-bayan__meme-label {
+	display: flex;
+	justify-content: space-between;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+.label-meme__icon {
+	width: 10px;
+	transition: 0.3s;
+}
+.memes-bayan__meme-input:checked + .memes-bayan__meme-label > .label-meme__icon{
+	transform: rotate(-90deg);
+	transition: 0.3s;
+}
+
+.memes-bayan__meme-image {
+	display: none;
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+}
+
 
