@@ -1,3 +1,3 @@
 # cssBayan
 
-https://slicezor.github.io/cssBayan/index.html
+https://slicezor.github.io/cssBayan/cssBayan/index.html
